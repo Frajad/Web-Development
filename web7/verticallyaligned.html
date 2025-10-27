@@ -6,48 +6,197 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vertical Form</title>
     <style>
+        h2 {
+            color: orangered;
+            font-size: 3rem;
+            font-style: italic;
+        }
+    </style>
+    <style>
         form {
             display: flex;
             flex-direction: column;
             gap: 0.5rem;
             max-width: 320px;
             margin: 1rem;
-            font-family:system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,'Open Sans','Helvetica Neue',sans-serif;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         }
 
         label {
-            display:flex;
-            flex-direction:column;
-            font-size:0.95rem;
-            
+            display: flex;
+            flex-direction: column;
+            font-size: 1rem;
+
         }
 
         input[type="text"],
         input[type="number"] {
-            padding: 0.45rem 0.5rem;
-            border: 1px solid #bbb;
+            padding: 0.45 0.5rem;
+            border: 1px solid black;
             border-radius: 6px;
             font-size: 1rem;
             margin-top: 0.25rem;
-
         }
     </style>
-
+    <style>
+        th {
+            border: 1px solid black;
+            font-size: 0.75rem;
+            font-style: oblique;
+            gap: 1rem;
+        }
+    </style>
+    <style>
+        td {
+            border: 1px solid black;
+            font-size: 0.75rem;
+            font-style: italic;
+            gap: 1rem;
+        }
+    </style>
 </head>
-
-<body>
-    <form method="post" action="#" autocomplete="on">
-        <label for="name">Name
-            <input type="text" id="name" name="name">
-        </label>
-        <label for="city">City
-            <input type="text" id="city" name="city">
-        </label>
-        <label for="pin code">Pin Code:
-            <input type="number" pattern="\d{4,10}" id="pin code" name="Pin Code:">
-        </label>
-        <button type="submit">submit</button>
-    </form>
 </body>
+<h2>Registration Form</h2>
+<form action="#" method="post" autocomplete="on">
+    <label for="name">name
+        <input type="text" name="name" id="name">
+    </label>
+    <label for="city">city
+        <input type="text" name="city" id="city">
+    </label>
+    <label for="Pin Code">Pin Code:
+        <input type="text" name="Pin Code" id="Pin Code">
 
-</html>
+    </label>
+    <button type="submit">submit</button>
+    <table>
+        <tr>
+            <th>Course</th>
+            <th>Section A</th>
+            <th>Section B</th>
+            <th>Section C</th>
+            <th>Section D</th>
+            <th>Section E</th>
+        </tr>
+        <tr>
+            <td>Data Science</td>
+            <td>
+                <input type="checkbox" name="sub" id="#">
+                <label for="#"></label>
+            </td>
+            <td>
+                <input type="checkbox" name="sub" id="#">
+                <label for="#"></label>
+            </td>
+            <td>
+                <input type="checkbox" name="sub" id="#">
+                <label for="#"></label>
+            </td>
+            <td>
+                <input type="checkbox" name="sub" id="#">
+                <label for="#"></label>
+            </td>
+            <td>
+                <input type="checkbox" name="sub" id="#">
+                <label for="#"></label>
+            </td>
+
+        </tr>
+        <tr>
+            <td>Computer Network</td>
+            <td>
+                <input type="checkbox" name="sub" id="#">
+                <label for="#"></label>
+            </td>
+            <td>
+                <input type="checkbox" name="sub" id="#">
+                <label for="#"></label>
+            </td>
+            <td>
+                <input type="checkbox" name="sub" id="#">
+                <label for="#"></label>
+            </td>
+            <td>
+                <input type="checkbox" name="sub" id="#">
+                <label for="#"></label>
+            </td>
+            <td>
+                <input type="checkbox" name="sub" id="#">
+                <label for="#"></label>
+            </td>
+
+        </tr>
+        <tr>
+            <td>Coal</td>
+            <td>
+                <input type="checkbox" name="sub" id="#">
+                <label for="#"></label>
+            </td>
+            <td>
+                <input type="checkbox" name="sub" id="#">
+                <label for="#"></label>
+            </td>
+            <td>
+                <input type="checkbox" name="sub" id="#">
+                <label for="#"></label>
+            </td>
+            <td>
+                <input type="checkbox" name="sub" id="#">
+                <label for="#"></label>
+            </td>
+            <td>
+                <input type="checkbox" name="sub" id="#">
+                <label for="#"></label>
+            </td>
+        <tr>
+            <td>Statistics Prop</td>
+            <td>
+                <input type="checkbox" name="sub" id="#">
+                <label for="#"></label>
+            </td>
+            <td>
+                <input type="checkbox" name="sub" id="#">
+                <label for="#"></label>
+            </td>
+            <td>
+                <input type="checkbox" name="sub" id="#">
+                <label for="#"></label>
+            </td>
+            <td>
+                <input type="checkbox" name="sub" id="#">
+                <label for="#"></label>
+            </td>
+            <td>
+                <input type="checkbox" name="sub" id="#">
+                <label for="#"></label>
+            </td>
+        <tr>
+            <td>Compiler</td>
+            <td>
+                <input type="checkbox" name="sub" id="#">
+                <label for="#"></label>
+            </td>
+            <td>
+                <input type="checkbox" name="sub" id="#">
+                <label for="#"></label>
+            </td>
+            <td>
+                <input type="checkbox" name="sub" id="#">
+                <label for="#"></label>
+            </td>
+            <td>
+                <input type="checkbox" name="sub" id="#">
+                <label for="#"></label>
+            </td>
+            <td>
+                <input type="checkbox" name="sub" id="#">
+                <label for="#"></label>
+            </td>
+
+        </tr>
+
+        </tr>
+
+        </tr>
+    </table>
+</form>
