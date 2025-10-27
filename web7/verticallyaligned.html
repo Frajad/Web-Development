@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vertical Form</title>
+    <style>
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            max-width: 320px;
+            margin: 1rem;
+            font-family:system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,'Open Sans','Helvetica Neue',sans-serif;
+        }
+
+        label {
+            display:flex;
+            flex-direction:column;
+            font-size:0.95rem;
+            
+        }
+
+        input[type="text"],
+        input[type="number"] {
+            padding: 0.45rem 0.5rem;
+            border: 1px solid #bbb;
+            border-radius: 6px;
+            font-size: 1rem;
+            margin-top: 0.25rem;
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <form method="post" action="#" autocomplete="on">
+        <label for="name">Name
+            <input type="text" id="name" name="name">
+        </label>
+        <label for="city">City
+            <input type="text" id="city" name="city">
+        </label>
+        <label for="pin code">Pin Code:
+            <input type="number" pattern="\d{4,10}" id="pin code" name="Pin Code:">
+        </label>
+        <button type="submit">submit</button>
+    </form>
+</body>
+
+</html>
