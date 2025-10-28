@@ -1,0 +1,14 @@
+body{
+    background-color: bisque;
+    margin: 40px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+img{
+    width: 400px;
+            border-radius: 10px;
+            margin: 15px 0;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+            shape-image-threshold:inherit;
+}
+h2{ text-decoration: underline;}
