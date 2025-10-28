@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weekly Class Timetable</title>
+    <link rel="stylesheet" href="design.css">
+</head>
+<body>
+    <h1>My Weekly Class Timetable</h1>
+    <table>
+        <tr>
+            <th>Time</th>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+        </tr>
+        <tr>
+            <td>9:00 - 10:00</td>
+            <td>Tecnical Report Writing</td>
+            <td>Data Structures</td>
+            <td>Web Development</td>
+            <td>Operating Systems</td>
+            <td>Database Systems</td>
+        </tr>
+        <tr>
+            <td>10:00 - 11:00</td>
+            <td>Programming</td>
+            <td>Tecnical Report Writing</td>
+            <td>Computer Networks</td>
+            <td>Data Structures</td>
+            <td>Compiler</td>
+        </tr>
+        <tr>
+            <td>11:00 - 12:00</td>
+            <td>Database Systems</td>
+            <td>Programming</td>
+            <td>Mathematics</td>
+            <td>Computer Networks</td>
+            <td>Operating Systems</td>
+        </tr>
+    </table>
+    <form>
+        <h2 style="text-align:center;">Class Registration Form</h2>
+
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+        <label for="time">Select Class Timing:</label>
+        <select id="time" name="time">
+            <option value="9-10">9:00 - 10:00</option>
+            <option value="10-11">10:00 - 11:00</option>
+            <option value="11-12">11:00 - 12:00</option>
+        </select>
+
+        <button type="submit">Register</button>
+    </form>
+
+</body>
+
+</html>
