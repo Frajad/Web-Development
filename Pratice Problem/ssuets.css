@@ -1,0 +1,82 @@
+header {
+    background-color: #004080;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+h2
+{
+    text-decoration: underline;
+}
+section{
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color:white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);;
+}
+footer{
+   background-color: #004080;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+footer h2{ text-decoration: none;}
+strong{ margin: 0 10px;}
+h3{text-align: center;
+text-decoration: underline;}
+footer a{
+    color: red;
+}
+body header h3{
+    text-decoration: none;
+}
+.navbar {
+    background-color: #103c68;
+}
+
+.navbar a:hover {
+    background-color: #0a0f13;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar li {
+    margin: 0;
+}
+
+.navbar a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+}
+.navbar a:hover {
+    background-color: #0a0f13;
+}
+
+.navbar a.active {
+    background-color: #02a676;
+}
+
+.navbar a {
+    background-color: #02a676;
+}
+select {
+    display: block;
+    text-decoration: none;
+    padding: 08px 28px;
+}
+
+option {
+    display: block;
+    color: black;
+    text-decoration: none
+}
