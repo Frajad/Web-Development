@@ -1,0 +1,121 @@
+/* Reset default spacing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f7fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background-color: #004080;
+  color: white;
+  text-align: center;
+  padding: 30px 15px;
+}
+
+header h1 {
+  font-size: 1.8em;
+}
+
+header p {
+  font-size: 1.1em;
+  margin-top: 5px;
+}
+
+/* Navigation Bar */
+nav {
+  background-color: #003366;
+  text-align: center;
+  padding: 12px 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+nav a:hover,
+nav a.active {
+  text-decoration: underline;
+}
+
+/* Introduction */
+.intro {
+  text-align: center;
+  width: 85%;
+  margin: 30px auto;
+}
+
+.intro h2 {
+  color: #004080;
+  margin-bottom: 10px;
+}
+
+.intro p {
+  margin-bottom: 20px;
+}
+
+.banner-img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Department Sections */
+.department {
+  background: white;
+  width: 85%;
+  margin: 30px auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.department h2 {
+  color: #004080;
+  margin-bottom: 10px;
+}
+
+.department p {
+  margin-bottom: 15px;
+}
+
+/* Department Images */
+.images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.images img {
+  width: 30%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.images img:hover {
+  transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+  background-color: #004080;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  font-size: 0.9em;
+}
