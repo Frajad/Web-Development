@@ -46,7 +46,7 @@ p {
 }
 
 .navbar a:hover {
-    background-color: #0a0f13;
+    text-decoration: underline;
 }
 
 .navbar a.active {
@@ -68,48 +68,91 @@ option {
     color: black;
     text-decoration: none
 }
+
 header {
     background-color: #004080;
     color: white;
     text-align: center;
     padding: 20px;
 }
-h2
-{
+
+h2 {
     text-decoration: none;
 }
-section{
+
+section {
     width: 80%;
     margin: 20px auto;
     padding: 20px;
-    background-color:white;
+    background-color: white;
     border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    ;
 }
-footer{
-   background-color: #004080;
+
+footer {
+    background-color: #333;
     color: white;
     text-align: center;
-    padding: 20px;
+    padding: 15px;
+    font-size: 0.95rem;
+    width: 100%;
+    margin-top: auto;
+    /* This pushes footer to bottom when content is short */
 }
-footer h2{ text-decoration: none;}
-strong{ margin: 0 10px;}
-h3{text-align: center;
-text-decoration: underline;}
-footer a{
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    footer {
+        font-size: 0.85rem;
+        padding: 10px;
+    }
+
+
+    strong {
+        margin: 0 10px;
+    }
+
+    h3 {
+        text-align: center;
+        text-decoration: underline;
+    }
+}
+
+footer a {
     color: red;
 }
-body header h3{
+
+body header h3 {
     text-decoration: none;
 }
-section p{
+
+section p {
     text-align: left;
 }
-section h2{padding: 10px;
+
+section h2 {
+    padding: 10px;
     text-decoration: none;
-    color: rgb(23, 78, 120);;
+    color: rgb(23, 78, 120);
+    ;
 }
-h3{text-decoration: none;
-font-style: normal ;
-font: 45 optional;
-font-family: Arial, Helvetica, sans-serif;}
+
+h3 {
+    text-decoration: none;
+    font-style: normal;
+    font: 45 optional;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Main page sections expand automatically */
+body > section {
+  flex: 1;
+  padding: 20px;
+}
