@@ -15,10 +15,11 @@ body > section {
 /* Header and Navbar styling (optional for clarity) */
 header {
   background-color: #004080;
-  padding: 20px;
+  padding: 10px;
 }
 
 .navbar {
+  padding: 10px;
   background-color: #222;
 }
 
