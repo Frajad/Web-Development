@@ -1,0 +1,97 @@
+/* ======= Main Heading (ID Selector) ======= */
+#myName {
+    text-align: center;
+    font-size: 3em;
+    color: #004080;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 20px;
+}
+
+/* ======= General Page Styling ======= */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+section {
+    padding: 20px;
+    text-align: center;
+}
+
+/* ======= Profile Image ======= */
+img.profile {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+/* ======= Hobbies Section ======= */
+.hobby-heading {
+    color: #0066cc;
+    font-size: 1.5em;
+    margin-top: 30px;
+    text-decoration: underline;
+}
+
+/* Container to hold hobby images in a row */
+.hobby-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* makes it responsive */
+    margin-top: 20px;
+}
+
+.hobby-image {
+    width: 250px;
+    height: 180px;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+/* ======= Responsive Design ======= */
+@media (max-width: 600px) {
+    #myName {
+        font-size: 2em;
+    }
+    img.profile {
+        width: 120px;
+        height: 120px;
+    }
+    .hobby-image {
+        width: 90%;
+        height: auto;
+    }
+}
+
+/* Skills list styling */
+.skills-list {
+    list-style-type: square;
+    display: inline-block;
+    text-align: left;
+    background-color: #f0f8ff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.skills-list li {
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: #004080;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .hobby-image {
+        width: 100%;
+    }
+    .skills-list {
+        width: 90%;
+    }
+}
